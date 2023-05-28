@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>food4you</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: black;
+            color: white;
+
+        }
+
+        header::before {
+            content: "";
+            background: url('https://source.unsplash.com/collection/190727/1600x900') no-repeat center center/cover;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            opacity: 0.5;
+
+        }
+
+        .navigation {
+            font-family: 'ABeeZee', sans-serif;
+            font-size: 20px;
+            display: flex;
+        }
+
+        li {
+            color: white;
+            padding: 34px 23px;
+            list-style: none;
+            padding: 20px 23px;
+        }
+
+        header {
+            display: flex;
+            flex-direction: column;
+        }
+
+        section {
+            font-family: 'ABeeZee', sans-serif;
+            height: 0px;
+            margin: 3px 23px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        h2 {
+            color: red;
+        }
+
+        section::After {
+            content: "south Indian,North Inadian,italian,chinese are available here ";
+            color: cyan;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: cyan;
+        }
+
+        p {
+            text-align: center;
+        }
+
+        .container {
+            border: 2px solid white;
+            margin: 50px 410px;
+            padding: 4px 75px;
+            width: 43%;
+            border-radius: 28px;
+        }
+
+        .form-group input {
+            font-family: 'Baloo bhai', cursive;
+            text-align: center;
+            display: block;
+            width: 508px;
+            padding: 1px;
+            border: 2px solid black;
+            margin: 21px auto;
+            font-size: 25px;
+            border-radius: 8px;
+        }
+
+        .container h1 {
+            text-align: center;
+            color: orange;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="navigation">
+                <li class="item"><a href="Menu.html">Menu</a></li>
+                <li class="item"><a href="About.html">About </a></li>
+                <li class="item"><a href="Services.html">Services</a></li>
+                <li class="item"><a href="ContactUs.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <h2>Welcome to food4you</h2>
+    </section>
+    <div class="container1">
+        <marquee style="height:23px; color:black;" behavior="scroll" direction="left" bgcolor="yellow" color="black">Our frenchises
+            offer's a varity of food around the India to enjoy stay connected to Us...</marquee>
+    </div>
+    <div class="container">
+        <h1>Enter your deatails so as soon as poosible we can reach us to you</h1>
+        <!-- <form action=""> -->
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your name">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Email">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Phone number">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" class="query" placeholder="Query">
+            </div>
+            <button class="btn" onclick="Query()">Submit</button>
+            <span id="p2" style="color: chartreuse; margin: 56px; font-size: 20px;" ></span>
+        <!-- </form> -->
+    </div>
+    </header>
+    <script>
+        function Query()
+        {
+            document.getElementById('p2').innerHTML= "Thankyou ! We will Contact you within 7 Working day's"
+        }
+    </script>
+</body>
+
+</html>

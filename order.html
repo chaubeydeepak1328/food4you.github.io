@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>food4you</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: black;
+            color: white;
+
+        }
+
+        header::before {
+            content: "";
+            background: url('https://source.unsplash.com/collection/190727/1600x900') no-repeat center center/cover;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            opacity: 0.5;
+
+        }
+
+        .navigation {
+            font-family: 'ABeeZee', sans-serif;
+            font-size: 20px;
+            display: flex;
+        }
+
+        li {
+            color: white;
+            padding: 34px 23px;
+            list-style: none;
+            padding: 20px 23px;
+        }
+
+        header {
+            display: flex;
+            flex-direction: column;
+        }
+
+        section {
+            font-family: 'ABeeZee', sans-serif;
+            height: 0px;
+            margin: 3px 23px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        h2 {
+            color: red;
+        }
+
+        section::After {
+            content: "south Indian,North Inadian,italian,chinese are available here ";
+            color: cyan;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: cyan;
+        }
+
+        p {
+            text-align: center;
+        }
+
+        .container {
+            border: 2px solid white;
+            margin: 45px 430px;
+            padding: 43px 12px;
+            width: 43%;
+            border-radius: 28px;
+        }
+
+        .form-group input {
+            font-family: 'Baloo bhai', cursive;
+            text-align: center;
+            display: block;
+            width: 508px;
+            padding: 1px;
+            border: 2px solid black;
+            margin: 21px auto;
+            font-size: 25px;
+            border-radius: 8px;
+        }
+
+        .container h1 {
+            text-align: center;
+            color: orange;
+        }
+        .process
+        {
+            float: right;
+        }
+        .picture
+        {
+            display: flex;
+            flex-direction: column;
+            margin: 0px 920px;
+            width: 5%;
+        }
+        .order{
+            display: flex;
+            direction: column;
+            float: right;
+        }
+        #btn:hover{
+            color: blueviolet;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="navigation">
+                <li class="item"><a href="Menu.html">Menu</a></li>
+                <li class="item"><a href="About.html">About </a></li>
+                <li class="item"><a href="Services.html">Services</a></li>
+                <li class="item"><a href="ContactUs.html">ContactUs</a></li>
+                <div class="picture"><img src="image/Menu.jpg" alt=""></div>
+            </ul>
+            
+        </nav>
+    </header>
+    <section>
+        <h2>Welcome to food4you</h2>
+    </section>
+    <div class="container1">
+        <marquee style="height:23px; color:black;" behavior="scroll" direction="left" bgcolor="yellow" color="black">Our
+            frenchises
+            offer's a varity of food around the India to enjoy stay connected to Us...</marquee>
+    </div>
+    </header>
+    <div class="container">
+        <label for="food">Choose item: </label>
+        <select name="food"  style="background-color: skyblue;" id="food1">
+            <option value="0">none</option>
+            <option value="10">Burger</option>
+            <option value="14">French fries</option>
+            <option value="18">chowmin</option>
+            <option value="10">momos</option>
+            <option value="8">Samosa with chatni</option>
+            <option value="46">Pizza</option>
+        </select>
+        <label for="Qty1">Qty: </label>
+        <select name="qty1" style="background-color: skyblue;" id="qty1">
+            <option value="1">1.plate</option>
+            <option value="2">2.plate</option>
+            <option value="3">3.plate</option>
+            <option value="4">4.plate</option>
+            <option value="5">5.plate</option>
+        </select>
+        <br><br>
+        <label for="drink">Choose soft drink: </label>
+        <select name="drink" style="background-color: skyblue;" id="food2">
+            <option value="0">Water</option>
+            <option value="10">Cock</option>
+            <option value="10">Marinda</option>
+            <option value="12">Bear</option>
+            <option value="21">shampin</option>
+        </select>
+        <label for="Qty2">Qty:</label>
+        <select name="qty2" style="background-color: skyblue;" id="qty2">
+            <option value="1">1.bottle</option>
+            <option value="2">2.bottle</option>
+            <option value="3">3.bottle</option>
+            <option value="4">4.bottle</option>
+            <option value="5">5.bottle</option>
+        </select>
+        <br><br>
+        <label for="desert">desert:</label>
+        <select name="desert" style="background-color: skyblue;" id="food3">
+            <option value="0">none</option>
+            <option value="18">kaju katli</option>
+            <option value="17">Barfi</option>
+            <option value="6">Gulab jamun</option>
+            <option value="4">rasgula</option>
+            <option value="3">sampapdi</option>
+        </select>
+        <label for="Qty3">Qty:</label>
+        <select name="qty3" style="background-color: skyblue;" id="qty3">
+            <option value="1">1.piece</option>
+            <option value="2">2.piece</option>
+            <option value="3">3.piece</option>
+            <option value="4">4.piece</option>
+            <option value="5">5.piece</option>
+        </select>
+        <br><br>
+        <label for="Name">Enter the Name:</label>
+        <input id="name" style="background-color: silver" type="text">
+        <br><br>
+        <label for="Phone no.">Phone no:</label>
+        <input id="name" style="background-color: silver" type="number">
+        <br><br>
+        <label for="Address">Enter the Address:</label>
+        <input id="Adress" style="background-color: silver" type="text">
+        <br><br>
+        <div class="process"><button id="btn" onclick="Calculate()">Proceed</button>
+        </div>
+        <br><br>
+        <div class="show"><div class="p" style="color: greenyellow; margin: 4px 40%; font-size: 20px;" id="p2"></div>
+        <div class="order" style=" font-size: 20px;" ><button id="btn1"><a href="confirm.html">confirm</a></button></div></div>
+
+    </div>
+    </header>
+
+    <script>
+        let proc = document.getElementById('btn')
+        let con = document.getElementById('btn1')
+        if(con.style.display!='none')
+        {
+            con.style.display = 'none'
+        }
+        function Calculate()
+        {   
+            let fast_food = parseInt(document.getElementById("food1").value);   
+            let fast_qty =  parseInt(document.getElementById("qty1").value);
+            let soft_drink = parseInt(document.getElementById('food2').value);
+            let drink_qty =  parseInt(document.getElementById('qty2').value);
+            let desert = parseInt(document.getElementById('food3').value);
+            let desert_qty =  parseInt(document.getElementById('qty3').value);
+            let Amount = (fast_food*fast_qty) + (soft_drink*drink_qty) + (desert*desert_qty);
+            document.getElementById('p2').innerHTML = `bill Amount is ₹${Amount}`;
+            proc.style.display ='none';
+            con.style.display = 'block';
+        }
+    </script>
+</body>
+
+</html>
